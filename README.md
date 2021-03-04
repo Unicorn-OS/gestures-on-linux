@@ -5,5 +5,8 @@
 ## gestures-on-linux
 [bulletmark / libinput-gestures](https://github.com/bulletmark/libinput-gestures)
 
-## 
+## cunidev / gestures
 [gitlab: cunidev / gestures](https://gitlab.com/cunidev/gestures)
+
+## jrolfs / magic-jackpad
+[jrolfs / magic-jackpad](https://github.com/jrolfs/magic-jackpad)
