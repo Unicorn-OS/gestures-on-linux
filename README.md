@@ -1,6 +1,6 @@
 # Option:
 ## gestures-on-linux
-[bulletmark / libinput-gestures](https://github.com/bulletmark/libinput-gestures)
+- src: [bulletmark / libinput-gestures](https://github.com/bulletmark/libinput-gestures)
 - [guide.video: Add multitouch trackpad gestures on Linux](https://youtu.be/ArBCfhVsTZw)
 
 ## cunidev / gestures
