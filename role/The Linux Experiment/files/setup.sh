@@ -1,6 +1,8 @@
 sudo gpasswd -a $USER input
-sudo apt -y \
-install wmctrl python3 python3-setuptools xdotool python3-gi libinput-tools python-gobject
+
+pre(){
+sudo apt -y install wmctrl python3 python3-setuptools xdotool python3-gi libinput-tools python-gobject
+}
 
 get(){
   src=~/.uni/src
@@ -8,15 +10,28 @@ get(){
   cd $src
   git clone https://github.com/bulletmark/libinput-gestures.git
 }
-get
 
-makeit(){
+build(){
 cd $src/libinput-gesture
 sudo make install
 }
-makeit
 
-libinput-gestures-setup autostart
-libinput-gestures-setup start
+setup(){
+  libinput-gestures-setup autostart
+  libinput-gestures-setup start
+}
+
+gui(){
+cd $src
+git clone https://gitlab.com/cunidev/gestures.git
+cd gestures
+sudo python3 setup.py install
+}
+
+pre
+get
+build
+setup
+gui
 
 #https://youtu.be/ArBCfhVsTZw
